@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}TOPページ{% endblock %}
+{% include "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="text-center h_p">
+        <h1>愚痴りたい内容を入力してください</h1>
+        <h1>愚痴採点アプリケーション</h1>
+        <a href="/create" role="button">テキスト登録画面</a>
+    </div>
+
+    {% for post in posts %}
+        <article>
+            <div class='alert  alert-primary' role='alert'>
+                <p>{{ post.text }}</p>
+                <p>Score : {{ post.score }}</p>
+                <p>{{ post.created_at }}</p>
+            </div>    
+        </article>
+    {% endfor %}
+</div>
+{% endblock %}
+
+
+
