@@ -1,4 +1,3 @@
 # bitches-chat-flask
 bitches-chat-flask
-
-<img src="bithces-chat-flask.png" width="400">
+https://sleepy-journey-29309.herokuapp.com/
